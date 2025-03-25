@@ -4,33 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../styles/styles.css"></link>
 </head>
 <body>
     <h1 className='text-5xl mb-5 font-bold text-sky-900'>Example 12!</h1>
                         
         <section>
-            <div>
+            <div class="inputs_area">
 
-                <div>
-                    <p>Inform your initial value:</p>
-                    <input id="value" type="number"></input>
-                </div>
-
-                <div>
-                    <p>Inform the mensal tax (per cent):</p>
-                    <input id="tax" type="number"></input>
-                </div>
-
-                <div>
-                    <p>Inform the period in months:</p>
-                    <input id="months" type="number"></input>
-                </div>
-
+                <p>Inform your initial value:</p>
+                <input id="value" type="number"></input>
+              
+                <p>Inform the mensal tax (per cent):</p>
+                <input id="tax" type="number"></input>
+               
+                <p>Inform the period in months:</p>
+                <input id="months" type="number"></input>
+                
             </div>
 
             <button id="btn">send</button>
                             
-            <div>
+            <div class="result_container">
                 <p>Final amount:</p>
                 <p id="result_area"></p>
             </div>

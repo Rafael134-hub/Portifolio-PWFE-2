@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 *{
     padding: 0 auto;
@@ -11,7 +13,42 @@ body {
     background-color: #000;
 }
 
+header{
+    background-color: #23252b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
 #logo{
+    max-width: 100%;
+    height: 5rem;
+    margin-left: 40px;
+}
+
+nav{
+    width: 25rem;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 40px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#logo_home{
     max-width: 100%;
     height: 5rem;
     margin-left: 40px;
@@ -70,3 +107,122 @@ body {
     max-height: 100%;
     width: 6rem;
 }
+
+
+button{
+    background-color: #ff640a;
+    color: #000;
+    padding: 1rem;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 5rem;
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+.exercise_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video_container{
+    max-width: 1250px;
+}
+
+.inputs_area{
+    margin-top: 2rem;
+}
+
+.inputs_area input{
+    background-color: #000;
+    border-style: none;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: solid 2px #59595b;
+    width: 30rem;
+}
+
+.inputs_area input:not(:last-child){
+    margin-right: 5rem;
+}
+
+
+.inputs_area input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom: solid 2px #ff640a;
+}
+
+
+.result_container{
+    width: 50rem;
+    min-height: 10rem;
+    border: 2px solid #ff640a;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.result_container:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+#result_area, .result_container p{
+    margin: 1rem;
+}
+
+footer{
+    background-image: linear-gradient(#000,  rgb(32, 56, 66));
+    margin-top: 13rem;
+    height: 8rem;
+    color: #a0a0a0;
+    font-size: 18px; 
+}
+
+.footer_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70;
+}
+
+.footer_container h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.brands_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+}
+
+.border_area{
+    width: 70%;
+    height: 1px;
+    background-color: #a0a0a0;
+    margin-bottom: 3.5rem;
+}
+
+#fernanda_pictures{
+    font-family: 'Nunito';
+}
+
