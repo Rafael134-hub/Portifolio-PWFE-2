@@ -13,6 +13,6 @@ button_state.addEventListener("click", () => {
 
     const doubled_numbers = numbers.map(number => number * 2);
 
-    result_area.textContent = doubled_numbers;
+    result_area.textContent = `Double of the numbers: ${doubled_numbers}`;
     
 });

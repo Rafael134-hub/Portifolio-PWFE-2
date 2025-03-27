@@ -1,41 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Início da área não visível do código -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript_13</title>
+
+    <!-- Link que chama o HTML -->
     <link rel="stylesheet" href="../../styles/styles.css"></link>
+
+<!-- Fim da área não visível do código -->
 </head>
+
+<!-- Início da área visível da página -->
 <body>
-    <h1 className='text-5xl mb-5 font-bold text-sky-900'>Example 1!</h1>
-                        
+
+    <!-- Início do cabeçalho -->
+    <header>
+
+        <!-- Logo do site -->
+        <a href="../../index.html" id="logo"><img src="../../images/crunchyroll_logo.png"></a>
+
+        <!-- Área de navegação -->
+        <nav>
+            <ul>
+                <li><a href="../js_homes/home_js.html">Java Script</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../ui_ux/ui_ux.html">UI UX</a></li>
+            </ul>
+        </nav>
+
+    <!-- Fim do cabeçalho -->
+    </header>
+
+    <!-- Ínicio da área principal -->
+    <main>
+
+        <!-- Seção do exercício -->
         <section>
 
-            <div class="inputs_area">
-                <label for="number1">Number 1</label>
-                <input id="number1" type="number" name="number1">
+            <!-- Container do container de exercício para centralizar os elementos -->
+            <div class="exercise_container">
 
-                <select id="options" name="options">
-                    <option value="plus">+</option>
-                    <option value="minus">-</option>
-                    <option value="divide">÷</option>
-                    <option value="multiply">x</option>
-                </select>
+                <!-- Área com o conteúdo/ elementos do exercício -->
+                <div class="exercise_area">
+                    <h1>Example 1 - Basic operations Calculator!</h1>
+                    
+                    <!-- Container para auxiliar a alinhar os elementos da página -->
+                    <div class="video_container">
 
-                <label for="number2">Number 2</label>
-                <input id="number2" type="number" name="number2">
-
-                <button id="btn">send</button>
+                        <!-- Área dos inputs -->
+                        <div class="inputs_area">
+                            <input id="number1" type="number" name="number1" placeholder="Type the first number">
             
+                            <select id="options" name="options">
+                                <option value="plus">+</option>
+                                <option value="minus">-</option>
+                                <option value="divide">÷</option>
+                                <option value="multiply">x</option>
+                            </select>
+            
+                            <input id="number2" type="number" name="number2" placeholder="Type the second number">
+            
+                        </div>
+                        
+                        <!-- Área do resultado do código -->
+                        <div class="result_container">
+                            <p id = "result_area"></p>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Container da linha de vídeo e do botão de play do código -->
+                    <div class="line_container">
+                        <button id="btn"><img src="../../images/play.png"></button>
+                        <div class="line_area">
+                            <div class="circle"></div>
+                            <div class="video_line"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="result_container">
-                <p>Result:</p>
-                <p id="result_area"></p>
+        </section> 
+    
+    <!-- Fim da área principal -->
+    </main>
+
+    <!-- Início do rodapé -->
+    <footer>
+
+        <!-- Container para auxiliar no alinhamento da borda e demais elementos -->
+        <div class="border_container">
+
+            <!-- Div utilizada para criar uma pequena borda com tamanho específico -->
+            <div class="border_area"></div>
+
+            <!-- Container para centralizar os elementos de texto como o Fernanda Pictures -->
+            <div class="footer_container">
+
+                <!-- Área dos elementos de texto do rodapé -->
+                <div class="brands_container">
+                    <p id="fernanda_pictures">FERNANDA PICTURES</p>
+                    <p>|</p>
+                    <p>© Crunchyroll, LLC</p>
+                </div>
+        
+                <h2 id="pwfe">PWFE</h2>
+        
             </div>
+        </div>
 
+    <!-- Fim do footer -->
+    </footer>
 
-        </section>
-        <script src="../../scripts/dom_function/exercise1.js"></script>
+    <!-- Tag que chama o Java Script utilizado na página -->
+    <script src="../../scripts/dom_function/exercise1.js"></script>  
+
+<!-- Fim da área visível da página -->
 </body>
 </html>

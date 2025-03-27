@@ -1,32 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Início da área não visível do código -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript_11</title>
+
+    <!-- Link que chama o HTML -->
     <link rel="stylesheet" href="../../styles/styles.css"></link>
+
+<!-- Fim da área não visível do código -->
 </head>
+
+<!-- Início da área visível da página -->
 <body>
-    <h1 className='text-5xl mb-5 font-bold text-sky-900'>Example 11!</h1>
 
-    <section>
+    <!-- Início do cabeçalho -->
+    <header>
 
-        <p>Rock, paper or scissors! Which one will you chose?:</p>
-        
-        <button id = "rock">Rock 💎</button>
-        <button id = "paper">Paper 📜</button>
-        <button id= "scissors">Scissors ✂️</button>                       
+        <!-- Logo do site -->
+        <a href="../../index.html" id="logo"><img src="../../images/crunchyroll_logo.png"></a>
+
+        <!-- Área de navegação -->
+        <nav>
+            <ul>
+                <li><a href="../js_homes/home_js.html">Java Script</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../ui_ux/ui_ux.html">UI UX</a></li>
+            </ul>
+        </nav>
+
+    <!-- Fim do cabeçalho -->
+    </header>
+
+    <!-- Ínicio da área principal -->
+    <main>
+
+        <!-- Seção do exercício -->
+        <section>
+
+            <!-- Container do container de exercício para centralizar os elementos -->
+            <div class="exercise_container">
+
+                <!-- Área com o conteúdo/ elementos do exercício -->
+                <div class="exercise_area">
+                    <h1>Example 11 - Rock Paper Scissors!</h1>
                     
-        <div class="result_container">
-            <p id="result_area1"></p>
+                    <!-- Container para auxiliar a alinhar os elementos da página -->
+                    <div class="video_container">
+
+                        <!-- Área dos botões para escolher qual opção ele deseja -->
+                        <button id = "rock">Rock 💎</button>
+                        <button id = "paper">Paper 📜</button>
+                        <button id= "scissors">Scissors ✂️</button> 
+                                        
+                        <!-- Resultados do código -->
+                        <div class="result_container">
+                            <p id="result_area1"></p>
+                        </div>
+                
+                        <div class="result_container">
+                            <p id="result_area2"></p>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Container da linha de vídeo e do botão de play do código -->
+                    <div class="line_container">
+                        <button id="btn"><img src="../../images/play.png"></button>
+                        <div class="line_area">
+                            <div class="circle"></div>
+                            <div class="video_line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> 
+    
+    <!-- Fim da área principal -->
+    </main>
+
+    <!-- Início do rodapé -->
+    <footer>
+
+        <!-- Container para auxiliar no alinhamento da borda e demais elementos -->
+        <div class="border_container">
+
+            <!-- Div utilizada para criar uma pequena borda com tamanho específico -->
+            <div class="border_area"></div>
+
+            <!-- Container para centralizar os elementos de texto como o Fernanda Pictures -->
+            <div class="footer_container">
+
+                <!-- Área dos elementos de texto do rodapé -->
+                <div class="brands_container">
+                    <p id="fernanda_pictures">FERNANDA PICTURES</p>
+                    <p>|</p>
+                    <p>© Crunchyroll, LLC</p>
+                </div>
+        
+                <h2 id="pwfe">PWFE</h2>
+        
+            </div>
         </div>
 
-        <div class="result_container">
-            <p id="result_area2"></p>
-        </div>
-                            
-    </section>
+    <!-- Fim do footer -->
+    </footer>
 
-    <script src="../../scripts/basic_commands/exersise11.js"></script>
+    <!-- Tag que chama o Java Script utilizado na página -->
+    <script src="../../scripts/basic_commands/exersise11.js"></script>  
+
+<!-- Fim da área visível da página -->
 </body>
 </html>

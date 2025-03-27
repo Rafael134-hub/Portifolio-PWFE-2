@@ -177,6 +177,16 @@ h1{
     width: 20rem;
 }
 
+.inputs_area select{
+    background-color: #000;
+    border-style: none;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: solid 2px #59595b;
+    width: 5rem;
+    text-align: center;
+}
+
 .inputs_area input:not(:last-child){
     margin-right: 2rem;
 }
@@ -194,7 +204,7 @@ h1{
     border: 2px solid #ff640a;
     color: #fff;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,3 +304,20 @@ footer{
     height: 2px;
     background-color: #a0a0a0;
 }
+
+
+#rock{
+    margin: 0;
+    margin-right: 2rem;
+}
+
+#paper{
+    margin: 0;
+    margin-right: 2rem;
+}
+
+
+#scissors{
+    margin: 0;
+}
+

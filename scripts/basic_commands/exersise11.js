@@ -1,3 +1,5 @@
+let button_state = document.getElementById("btn");
+
 let button_state1 = document.getElementById('rock');
 let button_state2 = document.getElementById('paper');
 let button_state3 = document.getElementById('scissors');
@@ -53,4 +55,8 @@ button_state2.addEventListener('click', () =>{
 
 button_state3.addEventListener('click', () =>{
     game("scissors")
+});
+
+button_state.addEventListener("click", () => {
+    alert("To play this game you'll only need to press the desired option button.");
 });

@@ -18,6 +18,6 @@ button_state.addEventListener("click", () => {
         result = 908.85;
     }
     
-    result_area.textContent = result;
+    result_area.textContent = `INSS tax value: ${result}`;
     
 });

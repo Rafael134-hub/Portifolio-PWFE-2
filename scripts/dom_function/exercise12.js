@@ -12,6 +12,6 @@ button_state.addEventListener("click", () => {
         result += (result) * (tax/100);
     }
     
-    result_area.textContent = result.toFixed(2);
+    result_area.textContent = `Final amount: ${result.toFixed(2)}`;
     
 });

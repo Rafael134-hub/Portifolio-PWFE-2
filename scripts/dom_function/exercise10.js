@@ -25,7 +25,7 @@ button_state.addEventListener("click", () => {
         result2 = 896.00;
     }
     
-    result_area1.textContent = result1;
-    result_area2.textContent = result2;
+    result_area1.textContent = `Income tax value: ${result1}`;
+    result_area2.textContent = `Deduction value: ${result2}`;
     
 });

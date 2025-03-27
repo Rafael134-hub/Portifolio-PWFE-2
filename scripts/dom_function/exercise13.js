@@ -20,6 +20,6 @@ button_state.addEventListener("click", () => {
 
 
     
-    result_area.textContent = mensal_installment.toFixed(2);
+    result_area.textContent = `Mensal installment: ${mensal_installment.toFixed(2)}`;
     
 });

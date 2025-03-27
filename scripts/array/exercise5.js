@@ -1,7 +1,17 @@
 const names = ["Enzo", "Márcia", "Fernanda", "Modesto", "Dorival", "Lindomar", "Israel", "Mariany", "Wilson", "Clebinho"];
+let display_names = "";
 
 const names_area = document.getElementById("names");
-names_area.textContent = names;
+
+for (let i = 0; i <= 9; i++){
+    if (i <= 8){
+        display_names += ` ${names[i]}, `
+    } else {
+        display_names += `${names[i]}`
+    }
+}
+
+names_area.textContent = display_names;
 
 let button_state = document.getElementById("btn");
 
