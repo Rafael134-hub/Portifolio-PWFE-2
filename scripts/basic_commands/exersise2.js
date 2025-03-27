@@ -20,8 +20,4 @@ function teste() {
     }
 };
 
-number.addEventListener('keyup', teste)
-
-button_state.addEventListener("click", () => {
-    alert("To verify if a number is odd or even, please type the desired number inside the 'Type the number' field.");
-})
+button_state.addEventListener("click", teste)
