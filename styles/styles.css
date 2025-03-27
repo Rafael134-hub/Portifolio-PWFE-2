@@ -129,7 +129,7 @@ button{
 h1{
     font-size: 34px;
     font-weight: 900;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -177,6 +177,79 @@ h1{
     width: 20rem;
 }
 
+
+.form_container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form_container input{
+    background-color: #000;
+    border-style: none;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: solid 2px #59595b;
+    width: 30rem;
+}
+
+.form_container input:not(:last-child){
+    margin-bottom: 3.5rem;
+}
+
+#radios_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+#radios_area input{
+    width: 3rem;
+    margin-bottom: 0rem;
+    color: #a0a0a0;
+}
+
+#radios_area input[type="radio"]{
+    accent-color: #ff640a;
+}
+
+#radios_area label{
+    color: #a0a0a0;;
+}
+
+#gender {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: left;
+    color: #a0a0a0;
+    font-size: 16px;
+    width: 30rem;
+}
+
+
+.form_container input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom: solid 2px #ff640a;
+}
+
+
+.form_container button{
+    color: #59595b;
+    border: 2px solid #a0a0a0;
+    border-radius: 20px;
+    width: 20rem;
+    height: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
 .inputs_area select{
     background-color: #000;
     border-style: none;
@@ -218,6 +291,12 @@ h1{
 
 #result_area, .result_container p{
     margin: 1rem;
+}
+
+
+#video_for_form{
+    margin: 0;
+    margin-top: 2rem;
 }
 
 footer{
@@ -264,6 +343,19 @@ footer{
     border-radius: 2rem;
     transition: all ease-in 0.8s;
     padding: 0.2rem;
+}
+
+#btn-video{
+    background-color: #000;
+    margin: 0;
+    border-radius: 2rem;
+    transition: all ease-in 0.8s;
+    padding: 0.2rem;
+}
+
+#btn-video img{
+    width: 4rem;
+    height: 4rem;
 }
 
 #btn:hover img{
@@ -320,4 +412,3 @@ footer{
 #scissors{
     margin: 0;
 }
-

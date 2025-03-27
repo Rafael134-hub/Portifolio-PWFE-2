@@ -1,69 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Início da área não visível do código -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript_21</title>
+
+    <!-- Link que chama o HTML -->
     <link rel="stylesheet" href="../../styles/styles.css"></link>
+
+<!-- Fim da área não visível do código -->
 </head>
+
+<!-- Início da área visível da página -->
 <body>
-    <h1 className='text-5xl mb-5 font-bold text-sky-900'>Example 9!</h1>
-                        
+
+    <!-- Início do cabeçalho -->
+    <header>
+
+        <!-- Logo do site -->
+        <a href="../../index.html" id="logo"><img src="../../images/crunchyroll_logo.png"></a>
+
+        <!-- Área de navegação -->
+        <nav>
+            <ul>
+                <li><a href="../js_homes/home_js.html">Java Script</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../ui_ux/ui_ux.html">UI UX</a></li>
+            </ul>
+        </nav>
+
+    <!-- Fim do cabeçalho -->
+    </header>
+
+    <!-- Ínicio da área principal -->
+    <main>
+
+        <!-- Seção do exercício -->
         <section>
-            <div class="form_container">
 
-                <form>
-                    <label for="name">Name</label>
-                    <input id="name" type="text">
+            <!-- Container do container de exercício para centralizar os elementos -->
+            <div class="exercise_container">
 
-                    <label for="adress">Adress</label>
-                    <input id="adress" type="text">
-
-                    <label for="gender">Gender</label>
-
-                    <input id="male" name="gender" type="radio" value="Male">
-                    <label for="male">Male</label>
-
-                    <input id="female" name="gender" type="radio" value="Female">
-                    <label for="female">Female</label>
-
-                    <input id="nonbinary" name="gender" type="radio" value="Non-binary">
-                    <label for="nonbinary">Non-binary</label>
-
-                    <input id="queer" name="gender" type="radio" value="Queer">
-                    <label for="queer">Queer</label>
-
-                    <input id="other" name="gender" type="radio" value="Other">
-                    <label for="other">Other</label>
-
-
-                    <label for="telephone">Telephone number</label>
-                    <input id="telephone" type="number">
-
-                    <label for="cellphone">Cellphone number</label>
-                    <input id="cellphone" type="number">
-
-                    <label for="email">Email</label>
-                    <input id="email" type="email">
-
-                    <button id="btn">send</button>
+                <!-- Área com o conteúdo/ elementos do exercício -->
+                <div class="exercise_area">
+                    <h1>Example 9- Form simulator!</h1>
                     
-                </form>
+                    <!-- Container para auxiliar a alinhar os elementos da página -->
+                    <div class="video_container">
 
+                        <!-- Container do formulário -->
+                        <div class="form_container">
+
+                            <!-- Formulário a ser enviado pelo usuário -->
+                            <form>
+                                <input id="name" type="text" placeholder="Type your name">
+                                <input id="adress" type="text" placeholder="Type your adress">
+            
+                                <p id="gender">Gender</p>
+                                
+                                <div id="radios_area">
+                                    <input id="male" name="gender" type="radio" value="Male">
+                                    <label for="male">Male</label>
+                
+                                    <input id="female" name="gender" type="radio" value="Female">
+                                    <label for="female">Female</label>
+                
+                                    <input id="nonbinary" name="gender" type="radio" value="Non-binary">
+                                    <label for="nonbinary">Non-binary</label>
+                
+                                    <input id="queer" name="gender" type="radio" value="Queer">
+                                    <label for="queer">Queer</label>
+                
+                                    <input id="other" name="gender" type="radio" value="Other" placeholder="Other">
+                                    <label for="other">Other</label>
+                                </div>
+                                
+                                <input id="telephone" type="number" placeholder="Type your telephone number">
+                                <input id="cellphone" type="number" placeholder="Type your cellphone number">       
+                                <input id="email" type="email" placeholder="Type your email adress">
+
+                                <button id="btn">SEND</button>
+                                
+                            </form>
+
+                    </div>
+
+                    <!-- Container da linha de vídeo e do botão de play do código -->
+                    <div class="line_container" id="video_for_form">
+                        <button id="btn-video"><img src="../../images/play.png"></button>
+                        <div class="line_area">
+                            <div class="circle"></div>
+                            <div class="video_line"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        
 
-        </section>
-        <script src="../../scripts/dom_function/exercise9.js"></script>
+        </section> 
+    
+    <!-- Fim da área principal -->
+    </main>
+
+    <!-- Início do rodapé -->
+    <footer>
+
+        <!-- Container para auxiliar no alinhamento da borda e demais elementos -->
+        <div class="border_container">
+
+            <!-- Div utilizada para criar uma pequena borda com tamanho específico -->
+            <div class="border_area"></div>
+
+            <!-- Container para centralizar os elementos de texto como o Fernanda Pictures -->
+            <div class="footer_container">
+
+                <!-- Área dos elementos de texto do rodapé -->
+                <div class="brands_container">
+                    <p id="fernanda_pictures">FERNANDA PICTURES</p>
+                    <p>|</p>
+                    <p>© Crunchyroll, LLC</p>
+                </div>
+        
+                <h2 id="pwfe">PWFE</h2>
+        
+            </div>
+        </div>
+
+    <!-- Fim do footer -->
+    </footer>
+
+    <!-- Tag que chama o Java Script utilizado na página -->
+    <script src="../../scripts/dom_function/exercise9.js"></script>  
+
+<!-- Fim da área visível da página -->
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 

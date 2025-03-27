@@ -1,3 +1,4 @@
+let button_state_play = document.getElementById("btn-video");
 let button_state = document.getElementById("btn");
 
 let users = [];
@@ -47,4 +48,8 @@ button_state.addEventListener("click", () => {
     
     alert("Data succesfully recieved.");
     
+});
+
+button_state_play.addEventListener("click", () => {
+    alert("To send the form, please, fill out the entire form end send it with the 'SEND' button.");
 });
