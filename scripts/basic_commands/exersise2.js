@@ -1,4 +1,5 @@
-const number = document.getElementById("number_test");
+let button_state = document.getElementById("btn");
+const number = document.getElementById("number");
 
 function teste() {
     const number_value = parseInt(number.value); 
@@ -20,3 +21,7 @@ function teste() {
 };
 
 number.addEventListener('keyup', teste)
+
+button_state.addEventListener("click", () => {
+    alert("To verify if a number is odd or even, please type the desired number inside the 'Type the number' field.");
+})

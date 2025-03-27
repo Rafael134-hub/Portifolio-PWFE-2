@@ -138,6 +138,17 @@ h1{
     align-items: center;
     justify-content: center;
     transition: all ease-in-out 1s;
+    text-align: center;
+}
+
+#converter_area{
+    margin-bottom: 9rem;
+}
+
+.exercise_container p{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 20px;
 }
 
 .exercise_container:hover{
@@ -204,6 +215,7 @@ footer{
     height: 8rem;
     color: #a0a0a0;
     font-size: 18px; 
+    margin-top: 10rem;
 }
 
 .footer_container{

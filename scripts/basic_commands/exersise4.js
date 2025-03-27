@@ -1,3 +1,5 @@
+let button_state = document.getElementById("btn");
+
 let celsius = document.getElementById("celsius");
 let fahrenheits = document.getElementById("fahrenheits");
 
@@ -15,3 +17,7 @@ function converter(type){
 
 celsius.addEventListener('keyup', () => {converter('celsius')});
 fahrenheits.addEventListener('keyup', () => {converter('fahrenheits')});
+
+button_state.addEventListener("click", ()=>{
+    alert("To convert any value, you'll only need to type the non converted value in the neccessary field");
+});
