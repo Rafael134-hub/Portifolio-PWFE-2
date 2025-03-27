@@ -408,7 +408,29 @@ footer{
     margin-right: 2rem;
 }
 
-
 #scissors{
     margin: 0;
+}
+
+.big_inputs_area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem; 
+    padding: 3rem;
+    margin: 0;
+}
+
+#long_input_area{
+    max-width: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#big_inputs_result{
+    margin-top: 2.5rem;
+}
+
+#big_inputs_line{
+    margin-top: 2rem;
 }

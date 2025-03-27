@@ -38,6 +38,6 @@ button_state.addEventListener("click", () => {
 
     above_average = numbers.filter(number => number > average);
 
-    result_area.textContent = above_average;
+    result_area.textContent = `Above the average ages: ${above_average}`;
     
 });
