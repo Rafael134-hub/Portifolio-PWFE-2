@@ -522,3 +522,49 @@ footer{
     margin: 0 auto;
     margin-top: 4rem;
 }
+
+#asta{
+    max-width: 100%;
+    height: 26rem;
+}
+
+.usability_container{
+    width: 100vw;
+}
+
+.usability_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.usability_text{
+    width: 26.25rem;
+}
+
+.usability_text h2{
+    margin-bottom: 2rem;
+    font-size: 34px;
+}
+
+.usability_text p{
+    color: #dadada;
+    font-size: 18px;
+}
+
+.content_line{
+    height: 0.3rem;
+    width: 70vw;
+    background: linear-gradient(to right, #ff640a, #ff640a, yellow);
+    margin-top: 2rem;
+}
+
+.usability_cards-conainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 70vw;
+}
+  
