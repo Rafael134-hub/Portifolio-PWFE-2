@@ -7,6 +7,14 @@ function diferenca(){
     
     const number_2 = document.getElementById("number_2");
     let number_2_value = parseFloat(number_2.value.replace(",", "."));
+
+    if (number_1_value == ""){
+        number_1_value = 0;
+    }
+
+    if (number_2_value == ""){
+        number_2_value = 0;
+    }
     
     let diferenca_numeros = number_1_value - number_2_value;
     const result = `The diference between ${number_1_value} and ${number_2_value} is: ${diferenca_numeros}` ;

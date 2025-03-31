@@ -18,6 +18,10 @@ button_state.addEventListener("click", () => {
         result = number1 / number2;
     }
 
+    if ( result === NaN || result === Infinity){
+        result = 0;
+    }
+
     result_area.textContent = result.toFixed(2);
     
 });

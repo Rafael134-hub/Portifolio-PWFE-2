@@ -4,7 +4,7 @@ exercises_button.addEventListener("click", () => {
     window.location.href = "../../main/basic_commands/exercise1.html";
 });
 
-let button_state = document.querySelector("#ver_mais-btn");
+let button_state = document.getElementById("ver_mais-btn");
 let state = 0;
 
 button_state.addEventListener("click", () => {

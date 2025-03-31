@@ -439,6 +439,8 @@ footer{
     grid-gap: 2.5rem; 
     padding: 3rem;
     margin: 0;
+    overflow: visible;
+    width: 100vw;
 }
 
 #long_input_area{
@@ -542,7 +544,7 @@ footer{
     font-weight: 900;
     cursor: pointer;
     border: solid 2px #fff;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 4rem;
 }
 
@@ -608,11 +610,60 @@ footer{
     width: 10rem;
 }
 
+.hime_container{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hime_container img{
+    margin: 0;
+    position: relative;
+    left: 1rem;
+}
+
+
 .colors_theory_container{
-    background-image: url('../images/hime_board.png');
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
-    width: 80vw;
-    height: 100%;
+    width: 60vw;
+    height: 35rem;
+    border: 2px solid #ff640a;
+}
+
+.color_theory_content{
+    width: 50%;
+    margin: 5rem;
+}
+
+.color_theory_content h2{
+    margin-bottom: 2rem;
+    font-size: 34px;
+}
+
+.color_theory_content p{
+    color: #dadada;
+    font-size: 20px;
+    max-width: 90%;
+    text-align: left;
+    margin: 0;
+}
+
+.color_theory_image{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.color_theory_image img{
+    max-width: 100%;
+    height: 25rem;
+    margin-right: 5rem;
 }
 
 #exercises_container{
@@ -629,7 +680,7 @@ footer{
 }
 
 .main_exercises_area_container{
-    max-width: 80vw;
+    max-width: 90vw;
 }
 
 .main_exercises_container h2{
@@ -640,7 +691,7 @@ footer{
 .main_exercises_area{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2.5rem; 
+    grid-gap: 4rem; 
     text-align: left;
 }
 
@@ -655,13 +706,33 @@ footer{
 .exercise_card h3{
     font-size: 16px;
     font-weight: 500;
-    margin-top: 0.5rem;
-    
+    margin-top: 0.5rem;   
 }
 
 .exercise_image_container img{
     width: 15rem;
     max-height: 100%;
+}
+
+.play_button_container{
+    width: 15rem;
+    height: 8.48rem;
+    background: url("../images/df_ep1.avif");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play_button{
+    width: 4rem;
+    max-height: 100%;
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+
+.play_button_container button:hover{
+    scale: 1.2;
 }
 
 #exercises_header{
@@ -674,12 +745,46 @@ footer{
     background: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 100%), 
     url('../images/spy_family_background.png');
+    background-repeat: no-repeat;
 }
+
+.image_area_2{
+    width: 100vw;
+    height: 80%;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 100%), 
+    url('../images/frieren_background.avif');
+    background-repeat: no-repeat;
+}
+
+.image_area_3{
+    width: 100vw;
+    height: 80%;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 100%), 
+    url('../images/one_piece_background.avif');
+    background-repeat: no-repeat;
+}
+
 
 #exercises_button{
     margin: 0;
-    margin-left: 3rem;
-    width: 10rem;
+    margin-left: 5rem;
+    max-width: 11rem;
+    margin-top: 4rem;
+}
+
+#exercises_button_2{
+    margin: 0;
+    margin-left: 4rem;
+    max-width: 11rem;
+    margin-top: 4rem;
+}
+
+#exercises_button_3{
+    margin: 0;
+    margin-left: 4rem;
+    max-width: 11rem;
     margin-top: 4rem;
 }
 
@@ -705,10 +810,22 @@ footer{
     margin-left: 3rem;
 }
 
+.title_area_2{
+    max-width: 37vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 3rem;
+}
+
 .title_area p{
     font-size: 80px;
 }
 
+.title_area_2 p{
+    font-size: 80px;
+}
 
 #exercises_main_title{
     font-size: 60px;
@@ -716,6 +833,11 @@ footer{
 }
 
 .title_area img{
+    max-height: 100%;
+    width: 25vw;
+}
+
+.title_area_2 img{
     max-height: 100%;
     width: 25vw;
 }
@@ -746,6 +868,6 @@ footer{
     color: #ff640a;
     background-color: #000;
     font-size: 16px;
-    margin-left: 3rem;
+    margin-left: 3.5rem;
     padding: 0;
 }
