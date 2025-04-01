@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -8,20 +9,20 @@ button_state.addEventListener("click", () => {
     const number2 = parseFloat(document.getElementById("number2").value);
     const option = document.getElementById("options").value;
 
-    if (option === "plus"){
+    if (option === "plus") {
         result = number1 + number2;
-    } else if (option === "minus"){
+    } else if (option === "minus") {
         result = number1 - number2;
-    } else if (option === "multiply"){
+    } else if (option === "multiply") {
         result = number1 * number2;
-    } else if (option === "divide"){
+    } else if (option === "divide") {
         result = number1 / number2;
     }
 
-    if ( result === NaN || result === Infinity){
+    if (result === NaN || result === Infinity) {
         result = 0;
     }
 
     result_area.textContent = result.toFixed(2);
-    
+
 });

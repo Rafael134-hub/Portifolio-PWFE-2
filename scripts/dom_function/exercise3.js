@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -7,10 +8,10 @@ button_state.addEventListener("click", () => {
     let final_message = "";
     word_lenght = word.length
 
-    for (let i = 0; i < word_lenght; i++){
+    for (let i = 0; i < word_lenght; i++) {
         final_message += `${word[i]}\n`
     }
 
     result_area.textContent = final_message;
-    
+
 });

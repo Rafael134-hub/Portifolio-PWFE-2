@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -8,10 +9,10 @@ button_state.addEventListener("click", () => {
     const months = parseFloat(document.getElementById("months").value);
     let result = value;
 
-    for (let i = 0; i < months; i++){
-        result += (result) * (tax/100);
+    for (let i = 0; i < months; i++) {
+        result += (result) * (tax / 100);
     }
-    
+
     result_area.textContent = `Final amount: ${result.toFixed(2)}`;
-    
+
 });

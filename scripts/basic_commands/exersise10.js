@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById('btn');
 
 function multiplication_table() {
@@ -9,11 +10,11 @@ function multiplication_table() {
 
     let result_text = "";
 
-    for (let i = 1; i <= 10; i++){
+    for (let i = 1; i <= 10; i++) {
         result_text += `${number_value} x ${i} = ${number_value * i}\n`;
     }
 
-   result_area.textContent = `${result_text}`;
+    result_area.textContent = `${result_text}`;
 
 };
 

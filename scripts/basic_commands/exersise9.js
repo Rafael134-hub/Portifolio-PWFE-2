@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById('btn')
 function convert() {
     const result_area = document.getElementById('result_area');

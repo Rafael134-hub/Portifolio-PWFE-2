@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Início da área não visível do código -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Array</title>
     <link rel="stylesheet" href="../../styles/styles.css">
     </link>
+
+    <!-- Fim da área não visível do código -->
 </head>
+
+<!-- Início da área visível da página -->
 
 <body>
 
@@ -31,8 +37,13 @@
         <!-- Fim do cabeçalho -->
     </header>
 
+    <!-- Ínicio da área principal -->
     <main>
+
+        <!-- Secao com a parte inicial com imagem e explicativo da aula -->
         <section>
+
+            <!-- Container que ajuda a centralizar o conteudo da parte inicial -->
             <div class="main_class_content_container">
 
                 <div class="image_area_2">
@@ -49,96 +60,50 @@
 
                 </div>
 
+                <!-- Area com o explicativo da aula -->
                 <div class="expand_content_container">
                     <div class="content_container">
                         <div class="content_collumn1">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec ex sodales, mollis
-                                nisl ac, tempus elit. Fusce ut felis placerat, viverra orci in, laoreet justo. Integer
-                                condimentum leo id orci condimentum lobortis. Quisque pellentesque magna est, non
-                                sollicitudin justo luctus et. Vivamus faucibus diam mauris, sed vehicula sem consequat
-                                vel. Vestibulum vitae imperdiet purus. Morbi consectetur, elit rhoncus consectetur
-                                suscipit, dui lorem tincidunt odio, mollis gravida urna nisl et nisl. Donec vehicula
-                                rutrum mauris, ut vehicula lectus aliquet non. Quisque ligula urna, suscipit volutpat
-                                dictum quis, pulvinar id odio. Etiam sed mi semper, sollicitudin lacus in, interdum ex.
+                            <h2>Arrays</h2>
+                            <p>
+                                In JavaScript, an array is a special type of object that allows storing multiple values
+                                in a single variable. Arrays can hold different data types, including numbers, strings,
+                                objects, and even other arrays. JavaScript provides several built-in methods to
+                                manipulate arrays efficiently. Among them, map, filter, and find are commonly used for
+                                transforming and searching through array elements.
+                            </p>
 
-                                Pellentesque ac sagittis purus. Quisque vitae sapien sem. Donec tortor est, iaculis id
-                                massa non, rhoncus viverra metus. Nam posuere elit nec euismod vestibulum. Donec sit
-                                amet arcu vitae augue ullamcorper maximus. Aliquam rhoncus lectus mollis metus suscipit
-                                sollicitudin quis eget erat. Ut commodo finibus consequat. Duis auctor posuere
-                                convallis. Aenean sed quam maximus, varius ligula at, faucibus urna. Nullam vel purus
-                                bibendum, eleifend metus vitae, vulputate purus. Aenean nulla ligula, sagittis eu ligula
-                                vel, bibendum pulvinar elit. Curabitur semper mauris eget lectus venenatis pretium.
-                                Aenean diam ligula, lobortis dignissim risus sit amet, sollicitudin volutpat ex. Sed
-                                tincidunt sem pretium efficitur posuere.
+                            <h2>Method map:</h2>
+                            <p>map: This method creates a new array by applying a function to each element of the
+                                original array. It is useful when you need to transform data.</p>
+                            <p>const numbers = [1, 2, 3, 4];</p>
+                            <p class="bigger_line">Example:</p>
+                            <p>const doubled = numbers.map(num => num * 2);</p>
+                            <p>console.log(doubled); // [2, 4, 6, 8]</p>
 
-                                Morbi scelerisque aliquet ligula, at efficitur arcu bibendum et. Aenean sit amet blandit
-                                arcu. Duis elementum nulla quis condimentum gravida. Nulla pharetra venenatis orci vitae
-                                lacinia. Sed ultricies libero ac turpis sollicitudin, sed sodales nisi ornare. Aliquam
-                                interdum massa eu diam ultricies tempor. Nullam ut nisl pretium, laoreet metus quis,
-                                consectetur urna. Donec feugiat velit vel mauris semper, ac vestibulum est vehicula.
-                                Fusce facilisis id ligula non fermentum. Morbi eros lectus, pellentesque quis bibendum
-                                sed, vestibulum sit amet felis. Vestibulum id diam eu sapien volutpat facilisis vitae a
-                                felis.
-
-                                Pellentesque nec posuere urna. Cras pharetra ante nec dui pellentesque convallis. Nam
-                                leo massa, vestibulum eget nulla eget, condimentum commodo nunc. Maecenas feugiat eu leo
-                                sed semper. Fusce semper tellus vel tortor congue, non fermentum risus sagittis. Vivamus
-                                luctus metus et ipsum bibendum pharetra. Nam euismod ultricies suscipit.
-
-                                Maecenas at convallis dui. Vivamus interdum in augue eget tempor. Quisque a neque quis
-                                leo rhoncus ultrices id quis ante. Nunc ac gravida diam, et feugiat elit. Ut odio odio,
-                                gravida nec porttitor a, consequat id purus. Mauris massa neque, vulputate sed erat eu,
-                                finibus porta neque. Sed convallis semper urna, suscipit cursus neque sodales vitae. Sed
-                                auctor consectetur libero at vulputate. Donec vitae urna vel est luctus aliquam in in
-                                ipsum. Quisque mattis dui eget massa ultricies egestas. Ut tincidunt accumsan ipsum,
-                                euismod viverra dolor vulputate in. Vestibulum eros ipsum, aliquet vel placerat
-                                facilisis, sagittis vitae lectus. Donec fermentum urna eu ultrices pharetra.</p>
                         </div>
 
                         <div class="content_collumn2">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec ex sodales, mollis
-                                nisl ac, tempus elit. Fusce ut felis placerat, viverra orci in, laoreet justo. Integer
-                                condimentum leo id orci condimentum lobortis. Quisque pellentesque magna est, non
-                                sollicitudin justo luctus et. Vivamus faucibus diam mauris, sed vehicula sem consequat
-                                vel. Vestibulum vitae imperdiet purus. Morbi consectetur, elit rhoncus consectetur
-                                suscipit, dui lorem tincidunt odio, mollis gravida urna nisl et nisl. Donec vehicula
-                                rutrum mauris, ut vehicula lectus aliquet non. Quisque ligula urna, suscipit volutpat
-                                dictum quis, pulvinar id odio. Etiam sed mi semper, sollicitudin lacus in, interdum ex.
+                            <h2>Method filter:</h2>
+                            <p>
+                                filter: This method returns a new array containing only the elements that satisfy a
+                                given condition. It is useful for selecting specific items from an array.
+                            </p>
+                            <p class="bigger_line">Example:</p>
+                            <p>const numbers = [1, 2, 3, 4, 5];</p>
+                            <p>const evenNumbers = numbers.filter(num => num % 2 === 0);</p>
+                            <p>console.log(evenNumbers);</p>
 
-                                Pellentesque ac sagittis purus. Quisque vitae sapien sem. Donec tortor est, iaculis id
-                                massa non, rhoncus viverra metus. Nam posuere elit nec euismod vestibulum. Donec sit
-                                amet arcu vitae augue ullamcorper maximus. Aliquam rhoncus lectus mollis metus suscipit
-                                sollicitudin quis eget erat. Ut commodo finibus consequat. Duis auctor posuere
-                                convallis. Aenean sed quam maximus, varius ligula at, faucibus urna. Nullam vel purus
-                                bibendum, eleifend metus vitae, vulputate purus. Aenean nulla ligula, sagittis eu ligula
-                                vel, bibendum pulvinar elit. Curabitur semper mauris eget lectus venenatis pretium.
-                                Aenean diam ligula, lobortis dignissim risus sit amet, sollicitudin volutpat ex. Sed
-                                tincidunt sem pretium efficitur posuere.
 
-                                Morbi scelerisque aliquet ligula, at efficitur arcu bibendum et. Aenean sit amet blandit
-                                arcu. Duis elementum nulla quis condimentum gravida. Nulla pharetra venenatis orci vitae
-                                lacinia. Sed ultricies libero ac turpis sollicitudin, sed sodales nisi ornare. Aliquam
-                                interdum massa eu diam ultricies tempor. Nullam ut nisl pretium, laoreet metus quis,
-                                consectetur urna. Donec feugiat velit vel mauris semper, ac vestibulum est vehicula.
-                                Fusce facilisis id ligula non fermentum. Morbi eros lectus, pellentesque quis bibendum
-                                sed, vestibulum sit amet felis. Vestibulum id diam eu sapien volutpat facilisis vitae a
-                                felis.
-
-                                Pellentesque nec posuere urna. Cras pharetra ante nec dui pellentesque convallis. Nam
-                                leo massa, vestibulum eget nulla eget, condimentum commodo nunc. Maecenas feugiat eu leo
-                                sed semper. Fusce semper tellus vel tortor congue, non fermentum risus sagittis. Vivamus
-                                luctus metus et ipsum bibendum pharetra. Nam euismod ultricies suscipit.
-
-                                Maecenas at convallis dui. Vivamus interdum in augue eget tempor. Quisque a neque quis
-                                leo rhoncus ultrices id quis ante. Nunc ac gravida diam, et feugiat elit. Ut odio odio,
-                                gravida nec porttitor a, consequat id purus. Mauris massa neque, vulputate sed erat eu,
-                                finibus porta neque. Sed convallis semper urna, suscipit cursus neque sodales vitae. Sed
-                                auctor consectetur libero at vulputate. Donec vitae urna vel est luctus aliquam in in
-                                ipsum. Quisque mattis dui eget massa ultricies egestas. Ut tincidunt accumsan ipsum,
-                                euismod viverra dolor vulputate in. Vestibulum eros ipsum, aliquet vel placerat
-                                facilisis, sagittis vitae lectus. Donec fermentum urna eu ultrices pharetra.</p>
+                            <h2>Method find:</h2>
+                            <p>
+                                find: This method returns the first element in the array that meets a specified
+                                condition. If no element is found, it returns undefined.
+                            </p>
+                            <p class="bigger_line">Example:</p>
+                            <p>const numbers = [10, 20, 30, 40];</p>
+                            <p>const found = numbers.find(num => num > 25);</p>
+                            <p>console.log(found);</p>
                         </div>
 
                     </div>
@@ -149,14 +114,17 @@
 
         </section>
 
+        <!-- Secao dos exercicios da pagina -->
         <section>
 
+            <!-- Container que ajuda a centralizar a area com os cards; links de cada aula -->
             <div class="main_exercises_container">
                 <div class="main_exercises_area_container">
                     <div id="exercises_title">
                         <h2>Examples of basic commands use!</h2>
                     </div>
-    
+
+                    <!-- Area com os cards; links de cada aula -->
                     <div class="main_exercises_area">
                         <div class="exercise_card">
                             <a href="../array/exercise1.html">
@@ -169,7 +137,7 @@
                                 </div>
                             </a>
                         </div>
-    
+
                         <div class="exercise_card">
                             <a href="../array/exercise2.html">
                                 <div class="exercise_image_container">
@@ -181,7 +149,7 @@
                                 </div>
                             </a>
                         </div>
-    
+
                         <div class="exercise_card">
                             <a href="../array/exercise3.html">
                                 <div class="exercise_image_container">
@@ -193,7 +161,7 @@
                                 </div>
                             </a>
                         </div>
-    
+
                         <div class="exercise_card">
                             <a href="../array/exercise4.html">
                                 <div class="exercise_image_container">
@@ -205,7 +173,7 @@
                                 </div>
                             </a>
                         </div>
-    
+
                         <div class="exercise_card">
                             <a href="../array/exercise5.html">
                                 <div class="exercise_image_container">
@@ -223,6 +191,8 @@
 
             </div>
         </section>
+
+        <!-- Fim da área principal -->
     </main>
 
     <!-- Início do rodapé -->
@@ -254,6 +224,7 @@
 
     <script src="../../scripts/home/array.js"></script>
 
+    <!-- Fim da área visível da página -->
 </body>
 
 </html>

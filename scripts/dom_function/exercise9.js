@@ -1,4 +1,7 @@
+// Pega o botao de envio padrao
 let button_state_play = document.getElementById("btn-video");
+
+// Pega o botao de envio do formulario
 let button_state = document.getElementById("btn");
 
 let users = [];
@@ -11,43 +14,43 @@ button_state.addEventListener("click", () => {
     const cellphone = document.getElementById("cellphone").value.trim();
     const email = document.getElementById("email").value.trim();
 
-    if (!username){
+    if (!username) {
         alert("The field Name is empty.");
         return;
     }
 
-    if (!adress){
+    if (!adress) {
         alert("The field Adress is empty.");
         return;
     }
 
     const gender = genderElement.value;
 
-    if (!gender){
+    if (!gender) {
         alert("The field Gender is empty.");
         return;
     }
 
-    if (!telephone){
+    if (!telephone) {
         alert("The field Telephone is empty.");
         return;
     }
 
-    if (!cellphone){
+    if (!cellphone) {
         alert("The field Cellphone is empty.");
         return;
     }
 
-    if (!email){
+    if (!email) {
         alert("The field Email is empty.");
         return;
     }
 
     const user = [username, adress, gender, telephone, cellphone, email];
     users.push(user);
-    
+
     alert("Data succesfully recieved.");
-    
+
 });
 
 button_state_play.addEventListener("click", () => {

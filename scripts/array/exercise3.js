@@ -1,5 +1,7 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
+// Funcao que pega as idades acima da media
 button_state.addEventListener("click", () => {
     const result_area = document.getElementById("result_area");
 
@@ -30,7 +32,7 @@ button_state.addEventListener("click", () => {
 
     let soma = 0;
 
-    for(let i = 0; i <=19; i++){
+    for (let i = 0; i <= 19; i++) {
         soma += numbers[i];
     }
 
@@ -38,6 +40,7 @@ button_state.addEventListener("click", () => {
 
     above_average = numbers.filter(number => number > average);
 
+    // Muda o texto da area de resultado para mostra-lo
     result_area.textContent = `Above the average ages: ${above_average}`;
-    
+
 });

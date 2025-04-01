@@ -1,5 +1,7 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
+// Funcao que pega a media dos valores informados
 button_state.addEventListener("click", () => {
     const result_area = document.getElementById("result_area");
 
@@ -15,12 +17,13 @@ button_state.addEventListener("click", () => {
     const numbers = [number1, number2, number3, number4, number5, number6, number7, number8];
     let soma = 0;
 
-    for(let i = 0; i <=7; i++){
+    for (let i = 0; i <= 7; i++) {
         soma += numbers[i];
     }
 
     average = soma / 8;
 
+    // Muda o texto da area de resultado para mostra-lo
     result_area.textContent = average.toFixed(2);
-    
+
 });

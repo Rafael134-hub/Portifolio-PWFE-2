@@ -1,12 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Inicio da area nao visivel do codigo -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI UX</title>
-    <link rel="stylesheet" href="../../styles/styles.css"></link>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    </link>
+
+<!-- Fim da area nao visivel do codigo -->
 </head>
+
+<!-- Inicio da area visivel do codigo -->
 <body>
     <!-- Início do cabeçalho -->
     <header id="exercises_header">
@@ -28,47 +34,66 @@
         <!-- Fim do cabeçalho -->
     </header>
 
+    <!-- Inicio da area principal -->
     <main>
+
+        <!-- Secao de apresentacao ao UI UX -->
         <section class="welcome">
+
+            <!-- Container que ajuda a centralizar a area de introducao ao UI UX -->
             <div class="welcome_container">
                 <div>
+
+                    <!-- area de introducao ao UI UX -->
                     <div class="welcome_texts">
                         <div class="texts_area">
                             <h1 id="welcome_title">UI UX!</h1>
-                            <h3>UI UX is an area of the Front End Development responsible for creating usefull and modern
-                                interfaces and great or necessary experiences. In this area, we learned thing like Usability,
-                                The 10 Nielsen Heuristcs, the Color Theory and how to create prototypes. An exemple of how I used 
+                            <h3>UI UX is an area of the Front End Development responsible for creating usefull and
+                                modern
+                                interfaces and great or necessary experiences. In this area, we learned thing like
+                                Usability, the Color Theory and how to create prototypes. An exemple of
+                                how I used
                                 it all, is a Figma developed by me! Click on the button above and see it!
 
                             </h3>
-                            
+
                         </div>
-    
+
                     </div>
 
+                    <!-- Area do botão que leva para o Figma -->
                     <div class="botton_area">
-                        <button id="ui_ux_btn">GO TO FIGMA</button>
+                        <button id="ui_ux_btn" onclick="window.open('https://www.figma.com/design/PyStvJpKQUjN2xJnXEiP57/JetReady?t=E0Ui56pjIzP7VOMR-1', '_blank')">GO TO FIGMA</button>
                         <img src="../../images/balls1_test.png">
                     </div>
 
                 </div>
 
-                <img src="../../images/mascot.webp">
-                
+                <!-- Imagem mostrada a direita -->
+                <img src="../../images/mascot.webp" alt="Hime abra~cando um gatinho">
+
             </div>
         </section>
 
+        <!-- Secão de usabilidade -->
         <section class="usability">
+
+            <!-- Container que ajuda a centralizar a area da usbilidade  -->
             <div class="usability_container">
                 <div class="js-area">
                     <div class="usability_area">
-                        <img src="../../images/asta_test.png" id="asta">    
+                        <img src="../../images/asta_test.png" id="asta">
                         <div class="usability_text">
                             <h2>5 concepts of Usability!</h2>
-                            <p>Usability in UI/UX refers to how easily users can interact with a product or interface. It focuses on creating intuitive, efficient, and enjoyable experiences by ensuring the design is user-friendly, accessible, and meets the user's needs. 
-                                Good usability leads to higher satisfaction, reduced frustration, and increased product success.</p>
+                            <p>Usability in UI/UX refers to how easily users can interact with a product or interface.
+                                It focuses on creating intuitive, efficient, and enjoyable experiences by ensuring the
+                                design is user-friendly, accessible, and meets the user's needs.
+                                Good usability leads to higher satisfaction, reduced frustration, and increased product
+                                success.</p>
                         </div>
                     </div>
+
+                    <!-- Cards de cada conceito de usabilidade -->
                     <div class="usability_content_container">
                         <div class="content_line"></div>
                         <div class="usability_cards-conainer">
@@ -97,30 +122,45 @@
                                 <h3>5 - Satisfaction</h3>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Secão de teoria das cores -->
         <section>
-            <div class="hime_container">
-                <img src="../../images/hime.webp">
 
+            <!-- Imgaem da personagem Hime mostrada ao lado -->
+            <div class="hime_container">
+                <img src="../../images/hime.webp" alt="Hime com um tablet">
+
+                <!-- Container que ajuda a centralizar a area de teoria das cores -->
                 <div class="colors_theory_container">
+
+                    <!-- Area de teoria das cores -->
                     <div class="color_theory_content">
                         <h2>Colors Theory!</h2>
-                        <p>Color theory is the study of how colors work together and the emotions they trigger. Warm colors—like red, orange, and yellow—tend to evoke feelings of warmth, passion, and energy. On the other hand, cool colors—such as blue, green, and purple—are calming, symbolizing peace, stability, and relaxation. Colors also carry cultural meanings; for instance, red can represent love or danger, while blue is often associated with trust and serenity. By understanding color theory, we can use colors more effectively in design and communication to influence moods and perceptions.</p>
+                        <p>Color theory is the study of how colors work together and the emotions they trigger. Warm
+                            colors—like red, orange, and yellow—tend to evoke feelings of warmth, passion, and energy.
+                            On the other hand, cool colors—such as blue, green, and purple—are calming, symbolizing
+                            peace, stability, and relaxation. Colors also carry cultural meanings; for instance, red can
+                            represent love or danger, while blue is often associated with trust and serenity. By
+                            understanding color theory, we can use colors more effectively in design and communication
+                            to influence moods and perceptions.</p>
                     </div>
 
+                    <!-- Area da imagem de exemplo de teoria das cores -->
                     <div class="color_theory_image">
-                        <img src="../../images/color_weel.png">
+                        <img src="../../images/color_weel.png" alt="Roda de teoria das cores">
                     </div>
                 </div>
-    
+
             </div>
-    
+
         </section>
+
+    <!-- Fim da area principal -->
     </main>
 
     <!-- Início do rodapé -->
@@ -141,15 +181,19 @@
                     <p>|</p>
                     <p>© Crunchyroll, LLC</p>
                 </div>
-        
+
                 <h2 id="pwfe">PWFE</h2>
-        
+
             </div>
         </div>
 
-    <!-- Fim do footer -->
+        <!-- Fim do footer -->
     </footer>
 
+    <!-- Tag que chama o Java Script utilizado na página -->
     <script src="../../scripts/home/home.js"></script>
+
+<!-- Inicio da area visivel do codigo -->
 </body>
+
 </html>

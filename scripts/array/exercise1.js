@@ -1,5 +1,7 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
+// Funcao que pega os numeros pares
 button_state.addEventListener("click", () => {
     const result_area = document.getElementById("result_area");
 
@@ -13,6 +15,7 @@ button_state.addEventListener("click", () => {
 
     const doubled_numbers = numbers.map(number => number * 2);
 
+    // Muda o texto da area de resultado para mostra-lo
     result_area.textContent = `Double of the numbers: ${doubled_numbers}`;
-    
+
 });

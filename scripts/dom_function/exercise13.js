@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -12,14 +13,11 @@ button_state.addEventListener("click", () => {
 
     const total_financing_value = financing_value - down_payment;
 
-    mensal_tax = (anual_tax/ 100) / 12;
+    mensal_tax = (anual_tax / 100) / 12;
 
-    mensal_installment = (total_financing_value * mensal_tax) / (1 - (1 + mensal_tax) ** -months )
-
-
+    mensal_installment = (total_financing_value * mensal_tax) / (1 - (1 + mensal_tax) ** -months)
 
 
-    
     result_area.textContent = `Mensal installment: ${mensal_installment.toFixed(2)}`;
-    
+
 });

@@ -1,6 +1,8 @@
+/* Importa as fontes */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Padroes colocados no seletor geral */
 * {
     padding: 0 auto;
     margin: 0 auto;
@@ -9,10 +11,12 @@
     overflow-x: hidden;
 }
 
+/* Cor de fundo do corpo */
 body {
     background-color: #000;
 }
 
+/* Estilizacao do cabecalho */
 header {
     background-color: #23252b;
     display: flex;
@@ -46,10 +50,18 @@ nav ul li {
     text-decoration: none;
 }
 
+
 nav ul li a {
     text-decoration: none;
     font-size: 16px;
+    transition: all 0.2s ease-in-out;
 }
+
+nav ul li a:hover {
+    color: #ff640a;
+}
+
+/* Estilizacao da parte inicial da area de UI UX */
 
 #logo_home {
     max-width: 100%;
@@ -84,10 +96,17 @@ nav ul li a {
     text-align: left;
 }
 
+/* Estilizacao de alguns titulos e subtitulos padroes */
 .texts_area h1 {
     margin: 0;
     margin-bottom: 2rem;
     font-weight: 900;
+}
+
+#big_inputs_title {
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
 .welcome_texts h3 {
@@ -101,6 +120,15 @@ nav ul li a {
     font-size: 34px;
 }
 
+h1 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* Estilizacao padrao de botao */
 .botton_area {
     width: 700px;
     padding: 60px;
@@ -143,14 +171,8 @@ button {
     align-items: center;
 }
 
-h1 {
-    font-size: 34px;
-    font-weight: 400;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
-    text-align: center;
-}
 
+/* Estilizacao de paginas de exercicios */
 .exercise_container {
     display: flex;
     align-items: center;
@@ -179,11 +201,14 @@ h1 {
     max-width: 1250px;
 }
 
+
+/* Estilizacao padrao de inputs */
 .inputs_area {
-    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 80rem;
 }
 
 .inputs_area input {
@@ -192,10 +217,11 @@ h1 {
     font-size: 16px;
     color: #fff;
     border-bottom: solid 2px #59595b;
-    width: 20rem;
+    width: 100%;
+    max-width: 18rem;
 }
 
-
+/* Estilizacao do formulario da pagina de exercicio do formulario */
 .form_container form {
     display: flex;
     align-items: center;
@@ -290,6 +316,7 @@ h1 {
     border-bottom: solid 2px #ff640a;
 }
 
+/* Estilizacao da area de resultados */
 .result_container {
     width: 40rem;
     min-height: 6rem;
@@ -319,6 +346,7 @@ h1 {
     margin-top: 2rem;
 }
 
+/* Estilizacao do rodape */
 footer {
     background-image: linear-gradient(#000, rgb(32, 56, 66));
     height: 8rem;
@@ -363,8 +391,12 @@ footer {
     border-radius: 2rem;
     transition: all ease-in 0.8s;
     padding: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     height: 100%;
 }
+
+/* Estilizacao da linah de video / play dos exercicios */
 
 #btn-video {
     background-color: #000;
@@ -420,7 +452,7 @@ footer {
     background-color: #a0a0a0;
 }
 
-
+/* Estilizacao dos exercicios de pedra papel ou tesoura */
 #rock {
     margin: 0;
     margin-right: 2rem;
@@ -435,18 +467,24 @@ footer {
     margin: 0;
 }
 
+/* Estilizacao da area de inputs grandes com varios inputs */
 .big_inputs_area {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
-    padding: 3rem;
-    margin: 0;
-    overflow: visible;
-    width: 100vw;
+    gap: 1rem;
+    padding: 2rem;
+    width: 70vw;
+    justify-items: start;
+}
+
+.big_inputs_area input {
+    width: 100%;
+    margin-top: 1rem;
 }
 
 #long_input_area {
-    max-width: 70vh;
+    max-width: 100%;
+    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,7 +498,7 @@ footer {
     margin-top: 2rem;
 }
 
-
+/* Estilizacao do fundo da home */
 .home_main_section {
     height: 100vh;
     width: 100vw;
@@ -474,6 +512,7 @@ footer {
     transition: all 2s ease-in-out;
 }
 
+/* Estilizacao da home */
 .home_title {
     margin: 0;
     margin-bottom: 4rem;
@@ -546,6 +585,7 @@ footer {
     margin-top: 4rem;
 }
 
+/* Estilizacao dos demais elementos do UI UX */
 #asta {
     max-width: 100%;
     height: 26rem;
@@ -646,7 +686,7 @@ footer {
 .color_theory_content p {
     color: #dadada;
     font-size: 20px;
-    max-width: 90%;
+    max-width: 95%;
     text-align: left;
     margin: 0;
 }
@@ -660,10 +700,11 @@ footer {
 
 .color_theory_image img {
     max-width: 100%;
-    height: 25rem;
+    max-height: 25rem;
     margin-right: 5rem;
 }
 
+/* Estilizacao das paginas de aula / exercicios */
 #exercises_container {
     display: flex;
     justify-content: center;
@@ -720,6 +761,7 @@ footer {
     justify-content: center;
 }
 
+/* Definicao de fundo com a imagem dele dos episodios / exercicios da pagina de comandos basicos */
 .bc_ep_1 {
     background: url("../images/bc_ep_1.png");
     background-size: cover;
@@ -780,6 +822,7 @@ footer {
     background-size: cover;
 }
 
+/* Definicao de fundo com a imagem dele dos episodios / exercicios da pagina de DOM e Funcao */
 .df_ep_1 {
     background: url("../images/df_ep1.avif");
     background-size: cover;
@@ -845,6 +888,7 @@ footer {
     background-size: cover;
 }
 
+/* Definicao de fundo com a imagem dele dos episodios / exercicios da pagina de Array */
 .a_ep_1 {
     background: url("../images/Aa_ep1.png");
     background-size: cover;
@@ -870,7 +914,7 @@ footer {
     background-size: cover;
 }
 
-
+/* Estilizacao do botao de play e sua area dos episodios */
 #play_button {
     width: 4rem;
     max-height: 100%;
@@ -886,6 +930,7 @@ footer {
     margin: 0;
 }
 
+/* Definicao das imagens de fundo da parte de cima das paginas de aula */
 .image_area {
     width: 100vw;
     height: 80%;
@@ -913,7 +958,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-
+/* Continuacao de estilizacao das paginas de aula */
 #exercises_button {
     margin: 0;
     margin-left: 5rem;
@@ -933,10 +978,6 @@ footer {
     margin-left: 4rem;
     max-width: 11rem;
     margin-top: 4rem;
-}
-
-.main_class_content_container {
-    margin-bottom: 5rem;
 }
 
 .title_container {
@@ -989,8 +1030,17 @@ footer {
     width: 25vw;
 }
 
+/* Estilizacao da area expansivel de aula com tamanhi inicial setado */
+.expand_content_container {
+    border-bottom: solid 1px #dadada;
+    max-width: 93rem;
+    padding-bottom: 1rem;
+    position: relative;
+    bottom: 8rem;
+}
+
 .content_container {
-    max-height: 100px;
+    max-height: 200px;
     width: 93vw;
     display: flex;
     justify-content: space-between;
@@ -1005,16 +1055,35 @@ footer {
     overflow: hidden;
 }
 
+.content_collumn1 ul li {
+    list-style-type: disc;
+}
+
 .content_collumn2 {
-    max-width: 40w;
+    max-width: 40vw;
     overflow: hidden;
 }
 
+.content_collumn2 ul li {
+    list-style-type: disc;
+}
+
+.content_container h2 {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+
+.bigger_line {
+    margin-top: 1.5rem;
+}
+
+/* Estilizacao do botao de ver mais ou ver menos */
 #ver_mais-btn {
     margin: 0;
     color: #ff640a;
     background-color: #000;
     font-size: 16px;
-    margin-left: 3.5rem;
     padding: 0;
+    margin-top: 1rem;
 }

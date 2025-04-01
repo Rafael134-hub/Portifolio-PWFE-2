@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -7,11 +8,11 @@ button_state.addEventListener("click", () => {
     let reversed_word = "";
     word_lenght = word.length
 
-    for (let i = word_lenght - 1; i >= 0; i --){
+    for (let i = word_lenght - 1; i >= 0; i--) {
         reversed_word += word[i];
         console.log(reversed_word)
     }
 
     result_area.textContent = reversed_word;
-    
+
 });

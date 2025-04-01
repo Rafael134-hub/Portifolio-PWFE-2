@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -6,7 +7,7 @@ button_state.addEventListener("click", () => {
     let value = parseFloat(document.getElementById("value").value);
     const initial_value = value;
     let minus = 0
-    
+
     let ced200 = 0;
     let ced100 = 0;
     let ced50 = 0;
@@ -43,8 +44,8 @@ button_state.addEventListener("click", () => {
     ced1 = (value - minus) / 1;
     value -= 1 * ced1;
 
-    
-    if (value){
+
+    if (value) {
         ced1 += 1;
     }
 
@@ -52,5 +53,5 @@ button_state.addEventListener("click", () => {
     \n200$: ${ced200}\n100$: ${ced100}\n50$: ${ced50}\n20$: ${ced20}\n10$: ${ced10}\n5$: ${ced5}\n1$: ${ced1}`;
 
     result_area.textContent = result;
-    
+
 });

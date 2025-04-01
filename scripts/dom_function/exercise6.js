@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -10,5 +11,5 @@ button_state.addEventListener("click", () => {
     const result = `${hours} hours are ${minutes} minutes.`;
 
     result_area.textContent = result;
-    
+
 });

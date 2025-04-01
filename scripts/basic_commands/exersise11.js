@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 let button_state1 = document.getElementById('rock');
@@ -23,7 +24,7 @@ function game(choice) {
 
     } else if (bot_choice == "scissors" && user_choice == "scissors") {
         result_area2.textContent = "It's a tie!";
-        
+
     } else if (bot_choice == "paper" && user_choice == "rock") {
         result_area2.textContent = "I won!";
 
@@ -45,15 +46,15 @@ function game(choice) {
 
 };
 
-button_state1.addEventListener('click', () =>{
+button_state1.addEventListener('click', () => {
     game("rock")
 });
 
-button_state2.addEventListener('click', () =>{
+button_state2.addEventListener('click', () => {
     game("paper")
 });
 
-button_state3.addEventListener('click', () =>{
+button_state3.addEventListener('click', () => {
     game("scissors")
 });
 

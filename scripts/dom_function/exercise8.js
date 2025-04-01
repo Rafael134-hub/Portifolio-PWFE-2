@@ -1,3 +1,4 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
 button_state.addEventListener("click", () => {
@@ -8,7 +9,7 @@ button_state.addEventListener("click", () => {
 
     const squareroot = Math.sqrt(number).toFixed(2);
     result = `The square root of ${number} is: ${squareroot}.`
-    
+
     result_area.textContent = result;
-    
+
 });

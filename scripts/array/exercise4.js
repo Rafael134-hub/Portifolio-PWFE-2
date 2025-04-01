@@ -1,5 +1,7 @@
+// Pega o botao de envio
 let button_state = document.getElementById("btn");
 
+// Funcao que pega os numeros pares
 button_state.addEventListener("click", () => {
     const result_area = document.getElementById("result_area");
 
@@ -17,7 +19,7 @@ button_state.addEventListener("click", () => {
     const numbers = [number1, number2, number3, number4, number5, number6, number7, number8, number9, number10];
     let soma = 0;
 
-    for(let i = 0; i <=9; i++){
+    for (let i = 0; i <= 9; i++) {
         soma += numbers[i];
     }
 
@@ -25,12 +27,13 @@ button_state.addEventListener("click", () => {
 
     let result = "";
 
-    if (evens.length === 0){
+    if (evens.length === 0) {
         result = "There is no informed evens.";
     } else {
         result = evens;
     }
-
-    result_area.textContent = result;
     
+    // Muda o texto da area de resultado para mostra-lo
+    result_area.textContent = result;
+
 });
